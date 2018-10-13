@@ -112,9 +112,18 @@ const ItemsHandler = {
         } else {
           speechOutput = 'I found these matching items. ';
           for (let idx = 0; idx < result.length; idx++) {
-            speechOutput += `Item ${idx+1} is ${result[idx].description} located in the ${result[idx].ocean} ocean, tagged with ${result[idx].tags}. `;
+            let audio = '';
+            for (let url of result[idx].urls) {
+              if (url.toLowerCase().endsWith('.mp3') && url.toLowerCase().startsWith('https')) {
+                audio = encodeURI(url);
+              }
+            }
+            if (audio) {
+              speechOutput += `Item ${idx+1} is ${result[idx].description} located in the ${result[idx].ocean} ocean, tagged with ${result[idx].tags}. I'll now play you the audio. <audio src="${audio}" /> `;
+            } else {
+              speechOutput += `Item ${idx+1} is ${result[idx].description} located in the ${result[idx].ocean} ocean, tagged with ${result[idx].tags}. `;
+            }
           }
-
         }
         return responseBuilder.speak(speechOutput).getResponse();
     }
