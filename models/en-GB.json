@@ -8,6 +8,7 @@
           "samples": [
             "search items for {keyword}",
             "search for {keyword}",
+            "search the {keyword}",
             "look for {keyword}",
             "find {keyword}"
           ],
