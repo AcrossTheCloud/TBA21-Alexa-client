@@ -1,30 +1,29 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "archive",
+      "invocationName": "ocean archive",
       "intents": [
         {
           "name": "ItemsIntent",
+          "slots": [
+            {
+              "name": "keyword",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
           "samples": [
             "search items for {keyword}",
             "search for {keyword}",
             "search the {keyword}",
             "look for {keyword}",
             "find {keyword}"
-          ],
-          "slots": [
-            {
-              "name": "keyword",
-              "type": "AMAZON.SearchQuery"
-            }
           ]
         },
         {
           "name": "AboutIntent",
           "samples": [
             "about"
-          ],
-          "slots": []
+          ]
         },
         {
           "name": "AMAZON.YesIntent",

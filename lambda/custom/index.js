@@ -74,9 +74,9 @@ const ItemsHandler = {
         console.log('searching for ' + term);
 
         const APIrequest = {
-          host: 'iqjxgvlpn4.execute-api.eu-central-1.amazonaws.com',
+          host: 'aj0srw8hq2.execute-api.eu-central-1.amazonaws.com',
           method: 'GET',
-          url: 'https://iqjxgvlpn4.execute-api.eu-central-1.amazonaws.com/prod/items',
+          url: 'https://aj0srw8hq2.execute-api.eu-central-1.amazonaws.com/prod/items',
           path: '/prod/items',
           headers: {
             'Content-Type': 'application/json'
@@ -236,7 +236,7 @@ const languageStrings = {
     en: {
         translation: {
             WELCOME: 'Welcome to the Ocean Archive!',
-            HELP: 'Ask Alexa about the archive, or say Alexa ask archive to search items for keyword.',
+            HELP: 'Ask Alexa about the ocean archive, or say Alexa ask ocean archive to search items for keyword.',
             ABOUT: 'The Ocean Archive is an archive of ocean artefacts developed by the TBA21 Academy in collaboration with USER Group and Across the Cloud.',
             STOP: 'Okay, see you next time!',
         },
@@ -244,7 +244,7 @@ const languageStrings = {
 };
 
 const SKILL_NAME = 'archive';
-const FALLBACK_MESSAGE = `The ${SKILL_NAME} can\'t help you with that.  You can ask me to search for people and items in the archive. What can I help you with?`;
+const FALLBACK_MESSAGE = `The ${SKILL_NAME} can\'t help you with that.  You can ask me to search for items in the archive. What can I help you with?`;
 const FALLBACK_REPROMPT = 'What can I help you with?';
 
 

@@ -5,36 +5,47 @@
         "en-US": {
           "summary": "Query the TBA21 Academy OceAnarchive.",
           "examplePhrases": [
-            "Alexa open archive",
-            "Alexa ask archive to search items for",
-            "Alexa ask archive to search people for"
+            "Alexa open ocean archive",
+            "Alexa ask ocean archive to search items for"
+          ],
+          "keywords": [
+            "ocean",
+            "archive"
           ],
           "name": "TBA21 Academy OceAnarchive",
-          "description": "Query the TBA21 Academy OceAnarchive."
+          "description": "Query the TBA21 Academy OceAnarchive.",
         },
         "en-AU": {
           "summary": "Query the TBA21 Academy OceAnarchive.",
           "examplePhrases": [
-            "Alexa open archive",
-            "Alexa ask archive to search items for",
-            "Alexa ask archive to search people for"
+            "Alexa open ocean archive",
+            "Alexa ask ocean archive to search items for",
+            ""
+          ],
+          "keywords": [
+            "ocean",
+            "archive"
           ],
           "name": "TBA21 Academy OceAnarchive",
-          "description": "Query the TBA21 Academy OceAnarchive."
+          "description": "Query the TBA21 Academy OceAnarchive.",
         },
         "en-GB": {
           "summary": "Query the TBA21 Academy OceAnarchive.",
           "examplePhrases": [
             "Alexa open archive",
             "Alexa ask archive to search items for",
-            "Alexa ask archive to search people for"
+            ""
+          ],
+          "keywords": [
+            "ocean",
+            "archive"
           ],
           "name": "TBA21 Academy OceAnarchive",
-          "description": "Query the TBA21 Academy OceAnarchive."
+          "description": "Query the TBA21 Academy OceAnarchive.",
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Sample Testing Instructions.",
+      "testingInstructions": "Ask Alexa ocean archive search for {keyword}",
       "category": "EDUCATION_AND_REFERENCE",
       "distributionCountries": []
     },
@@ -45,6 +56,27 @@
         }
       }
     },
-    "manifestVersion": "1.0"
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://github.com/AcrossTheCloud/TBA21-Alexa-client",
+          "privacyPolicyUrl": "https://github.com/AcrossTheCloud/TBA21-Alexa-client"
+        },
+        "en-AU": {
+          "termsOfUseUrl": "https://github.com/AcrossTheCloud/TBA21-Alexa-client",
+          "privacyPolicyUrl": "https://github.com/AcrossTheCloud/TBA21-Alexa-client"
+        },
+        "en-GB": {
+          "termsOfUseUrl": "https://github.com/AcrossTheCloud/TBA21-Alexa-client",
+          "privacyPolicyUrl": "https://github.com/AcrossTheCloud/TBA21-Alexa-client"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
   }
 }
